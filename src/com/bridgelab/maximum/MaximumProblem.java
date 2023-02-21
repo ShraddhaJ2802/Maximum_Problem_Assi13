@@ -23,4 +23,15 @@ public class MaximumProblem {
 
         return max; // returns the largest object
     }
+    public String getMaxString(String s1 , String s2 , String s3) {
+        String max = s1; // assume x is initially the largest
+
+        if (s2.compareTo(max) > 0)
+            max = s2; // num2 is the largest so far
+
+        if (s3.compareTo(max) > 0)
+            max = s3; // num3 is the largest
+
+        return max; // returns the largest object
+    }
 }
